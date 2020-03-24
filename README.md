@@ -45,6 +45,14 @@
 
 #### 2.1 Context 实现跨层级的组件数据传递
 
+- 定义
+  - 可以让数据在组件树中直接传递，而不需要一级一级手动传递
+  - 类似于全局变量的做法会使组件失去独立性，复用困难
+- 结构
+  - `Context` = `<Provider>`派发 + `<Consumer>`接收（任意层级）
+- API
+  - `createContext(defaultValue?)`
+
 #### 2.2 静态属性 ContextType 访问跨层级组件的数据
 
 #### 2.3 Lazy 与 Suspense 实现延迟加载
