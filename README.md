@@ -204,4 +204,7 @@ class Foo extends Component {
 
 #### 3.8 Hooks 的使用法则
 
+- 只在最顶层使用 Hook
+- 只在 React 函数中调用 Hook
+
 #### 3.9 Hooks 的常见问题
