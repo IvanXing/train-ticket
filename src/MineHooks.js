@@ -51,7 +51,7 @@ function useSize() {
   return size;
 }
 
-function App() {
+function MineHooks() {
   const [count, setCount] = useCount(0);
   const Counter = useCounter(count);
   const size = useSize();
@@ -65,4 +65,4 @@ function App() {
   );
 }
 
-export default App;
+export default MineHooks;

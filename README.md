@@ -196,6 +196,12 @@ class Foo extends Component {
 
 #### 3.7 自定义 Hooks
 
+> `MyHooks.js`
+
+- 父子两个组件分享了关于 size 的状态逻辑
+
+> `MineHooks.js`
+
 #### 3.8 Hooks 的使用法则
 
 #### 3.9 Hooks 的常见问题
