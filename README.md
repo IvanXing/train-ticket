@@ -158,6 +158,11 @@ class Foo extends Component {
 
 #### 3.3 使用 Effect Hooks
 
+- 副作用：一些行为是在组件渲染过程之外的，如绑定事件，网络请求，访问 DOM，调用时机一般是 Mount（componentDidMount）之后，Update（componentDidUpdate）之后，Unmount（componentWillUnmount）之前
+- useEffect 可以覆盖上述场景，每次渲染都运行
+
+> `HooksuseEffect.js`
+
 #### 3.4 使用 Context Hooks
 
 #### 3.5 使用 Memo&Callback Hooks

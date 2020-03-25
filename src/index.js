@@ -6,13 +6,15 @@ import App from "./App.js";
 // import UseContextType from "./UseContextType.js";
 // import UseLazy from "./UseLazy.js";
 // import Usememo from "./Usememo.js";
-import HooksuseState from "./HooksuseState.js";
+// import HooksuseState from "./HooksuseState.js";
+// import HooksuseEffect from "./HooksuseEffect.js";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <HooksuseState />
+    {/* <HooksuseEffect /> */}
+    {/* <HooksuseState /> */}
     {/* <Usememo /> */}
     {/* <UseLazy /> */}
     {/* <UseContext /> */}

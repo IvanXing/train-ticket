@@ -1,7 +1,7 @@
 import React, { Component, useState, useEffect } from "react";
 import "./App.css";
 
-function App() {
+function HooksuseEffect() {
   const [count, setCount] = useState(0);
   const [size, setSize] = useState({
     width: document.documentElement.clientWidth,
@@ -39,7 +39,7 @@ function App() {
   );
 }
 
-class App2 extends Component {
+class HooksuseEffect2 extends Component {
   state = {
     count: 0,
     size: {
@@ -77,4 +77,4 @@ class App2 extends Component {
   }
 }
 
-export default App;
+export default HooksuseEffect;
