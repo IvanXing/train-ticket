@@ -8,11 +8,13 @@ import App from "./App.js";
 // import Usememo from "./Usememo.js";
 // import HooksuseState from "./HooksuseState.js";
 // import HooksuseEffect from "./HooksuseEffect.js";
+// import HooksuseContext from "./HooksuseContext.js";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    {/* <HooksuseContext /> */}
     {/* <HooksuseEffect /> */}
     {/* <HooksuseState /> */}
     {/* <Usememo /> */}

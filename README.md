@@ -54,14 +54,15 @@
   - `createContext(defaultValue?)`
   - Consumer 向上找不到 Provider 时，则会显示参数 defaultValue，通常用于单元测试
 
-> UseContext.js
+> `UseContext.js`
 
 #### 2.2 静态属性 ContextType 访问跨层级组件的数据
 
 - 在只有一个 context 的组件中，使用 ContextType 比使用<Consumer>简单的多
+- 只能承载一个 context 值，只适用于类组件
 - 但是<Provider>的提供必不可少
 
-> UseContextType.js
+> `UseContextType.js`
 
 #### 2.3 Lazy 与 Suspense 实现延迟加载
 
@@ -76,7 +77,7 @@
 - ErrorBoundary 捕获任何（同步以及异步）组件加载错误
   - componentDidCatch 或者 static getDerivedStateFromError
 
-> UseLazy.js
+> `UseLazy.js`
 
 #### 2.4 Memo 实现指定组件进行渲染
 
@@ -105,7 +106,7 @@ class Foo extends Component {
 
 - Memo：包裹无状态组件
 
-> Usememo.js
+> `Usememo.js`
 
 ### 3. React-Hooks
 
@@ -154,7 +155,8 @@ class Foo extends Component {
     return props.defaultCount || 0;
   });
   ```
-  > `HooksuseState.js`
+
+> `HooksuseState.js`
 
 #### 3.3 使用 Effect Hooks
 
@@ -164,6 +166,11 @@ class Foo extends Component {
 > `HooksuseEffect.js`
 
 #### 3.4 使用 Context Hooks
+
+- 解决类组件静态成员 contextType 不能使用，且只能承载一个值的问题
+- 依然会破坏组件的独立性
+
+> `HooksuseContext.js`
 
 #### 3.5 使用 Memo&Callback Hooks
 

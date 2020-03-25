@@ -24,7 +24,7 @@ function Counter() {
   return <div>{count}</div>;
 }
 
-function App() {
+function HooksuseContext() {
   const [count, setCount] = useState(0);
 
   return (
@@ -39,4 +39,4 @@ function App() {
   );
 }
 
-export default App;
+export default HooksuseContext;
