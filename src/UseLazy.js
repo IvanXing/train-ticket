@@ -6,7 +6,7 @@ const About = lazy(() => import(/*webpackChunkName: 'about'*/ "./About.js"));
 // about.chunk.js 设置 Block Request URL
 // 捕获后台组件渲染错误：ErrorBoundary 错误边界 利用一个生命周期 componentDidCatch
 
-class App extends Component {
+class UseLazy extends Component {
   //类成员语法
   state = {
     hasError: false
@@ -28,6 +28,7 @@ class App extends Component {
     }
     return (
       <div>
+        <div>==========demo: lazy and Suspense==========</div>
         <Suspense fallback={<div>loading</div>}>
           <About></About>
         </Suspense>
@@ -36,4 +37,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default UseLazy;

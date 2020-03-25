@@ -54,11 +54,28 @@
   - `createContext(defaultValue?)`
   - Consumer 向上找不到 Provider 时，则会显示参数 defaultValue，通常用于单元测试
 
+> UseContext.js
+
 #### 2.2 静态属性 ContextType 访问跨层级组件的数据
 
 - 在只有一个 context 的组件中，使用 ContextType 比使用<Consumer>简单的多
 - 但是<Provider>的提供必不可少
 
+> UseContextType.js
+
 #### 2.3 Lazy 与 Suspense 实现延迟加载
+
+- 背景：暂时没有使用的资源=>延迟加载
+- 途径
+
+  - webpack：code splitting 人为拆分
+  - import: 动态导入返回一个 promise `import('./detail.js').then(...)`
+
+- Lazy 异步导入组件，lazy 返回一个组件
+- Suspense 与 lazy 配合，传入参数为待加载状态时显示，需为组件实例`<Loading />` or `JSX`
+- ErrorBoundary 捕获任何（同步以及异步）组件加载错误
+  - componentDidCatch 或者 static getDerivedStateFromError
+
+> UseLazy.js
 
 #### 2.4 Memo 实现指定组件进行渲染
