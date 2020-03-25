@@ -6,7 +6,7 @@ const Counter = memo(function Counter(props) {
   return <h1 onClick={props.onClick}>{props.count}</h1>;
 });
 
-function App() {
+function HooksuseCallback() {
   const [count, setCount] = useState(0);
   const [clickCount, setClickCount] = useState(0);
 
@@ -47,4 +47,4 @@ function App() {
   );
 }
 
-export default App;
+export default HooksuseCallback;

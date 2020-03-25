@@ -174,12 +174,16 @@ class Foo extends Component {
 
 #### 3.5 使用 Memo&Callback Hooks
 
-- 利用 memo 可以减少不必要的重复计算
+- 利用 memo 可以减少不必要的重复计算（用于优化性能）
 - memo：针对一个组件的渲染是否重复执行`<Foo />`
 - useMemo: 定义一段函数逻辑是否重复执行`()=>{}`
 - useMemo 可以依赖另一个 useMemo
 
 > `HooksuseMeno.js`
+
+- useMemo(()=>fn) 可以简写成 useCallback(fn)
+
+> `HooksuseCallback.js`
 
 #### 3.6 使用 Ref Hooks
 
