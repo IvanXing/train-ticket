@@ -49,7 +49,7 @@ class Usememo extends Component {
         </button>
         <button
           onClick={() => {
-            this.state.person.age++;
+            // this.state.person.age++;
             this.setState({ person: this.state.person });
           }}
         >

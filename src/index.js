@@ -2,19 +2,21 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App.js";
-import UseContext from "./UseContext.js";
-import UseContextType from "./UseContextType.js";
-import UseLazy from "./UseLazy.js";
-import Usememo from "./Usememo.js";
+// import UseContext from "./UseContext.js";
+// import UseContextType from "./UseContextType.js";
+// import UseLazy from "./UseLazy.js";
+// import Usememo from "./Usememo.js";
+import HooksuseState from "./HooksuseState.js";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <Usememo />
-    <UseLazy />
-    <UseContext />
-    <UseContextType />
+    <HooksuseState />
+    {/* <Usememo /> */}
+    {/* <UseLazy /> */}
+    {/* <UseContext /> */}
+    {/* <UseContextType /> */}
   </React.StrictMode>,
   document.getElementById("root")
 );

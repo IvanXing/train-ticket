@@ -106,3 +106,66 @@ class Foo extends Component {
 - Memo：包裹无状态组件
 
 > Usememo.js
+
+### 3. React-Hooks
+
+#### 3.1 Hooks 的概念与意义
+
+- 以往：class 组件，无状态组件用函数
+- Hooks let you use state and other React features without writting class
+- 类组件不足
+  - 状态逻辑复用难
+    - 缺少复用机制
+    - 渲染属性和高阶组件导致层级冗余
+  - 趋向复杂难以维护
+    - 生命周期函数混杂不相干逻辑
+    - 相干逻辑分散在不同生命周期
+  - this 指向困扰
+    - 内联函数过度创建新句柄
+    - 类成员函数不能保证 this
+- Hooks 优势
+  - 函数组件无 this 问题
+  - 自定义 Hook 方便复用状态逻辑
+  - 副作用的关注点分离
+
+#### 3.2 使用 State Hooks
+
+- 原理上是利用全局唯一性，按照固定次序推断的
+- useState 是用来替代类组件中 state 和 setState 的新的状态解决方案
+- 每次都要求稳定的次序，稳定的数量调用
+  - 配置检查规则
+  - npm i eslint-plugin-react-hooks -D
+  - yarn add eslint-plugin-react-hooks --dev
+  ```js
+  "eslintConfig": {
+    "extends": "react-app",
+    "plugins": [
+      "react-hooks"
+    ],
+    "rules": {
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn"
+    }
+  },
+  ```
+- useState 可以传入一个函数，延迟初始化，提高效率
+  ```js
+  const [count, setCount] = useState(() => {
+    return props.defaultCount || 0;
+  });
+  ```
+  > `HooksuseState.js`
+
+#### 3.3 使用 Effect Hooks
+
+#### 3.4 使用 Context Hooks
+
+#### 3.5 使用 Memo&Callback Hooks
+
+#### 3.6 使用 Ref Hooks
+
+#### 3.7 自定义 Hooks
+
+#### 3.8 Hooks 的使用法则
+
+#### 3.9 Hooks 的常见问题

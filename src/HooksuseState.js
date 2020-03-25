@@ -1,7 +1,7 @@
 import React, { Component, useState } from "react";
 import "./App.css";
 
-function App(props) {
+function HooksuseState(props) {
   const [count, setCount] = useState(() => {
     return props.defaultCount || 0;
   });
@@ -13,7 +13,7 @@ function App(props) {
   );
 }
 
-class App2 extends Component {
+class HooksuseState2 extends Component {
   state = {
     count: 0
   };
@@ -29,4 +29,4 @@ class App2 extends Component {
   }
 }
 
-export default App;
+export default HooksuseState;
