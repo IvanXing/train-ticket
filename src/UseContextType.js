@@ -18,7 +18,7 @@ class Middle extends Component {
   }
 }
 
-class App extends Component {
+class UseContextType extends Component {
   state = {
     battery: 60,
     online: false
@@ -28,6 +28,7 @@ class App extends Component {
     return (
       <BatteryContext.Provider value={battery}>
         <OnlineContext.Provider value={online}>
+          <div>=========== demo: contextType ==========</div>
           <button
             type="button"
             onClick={() => this.setState({ battery: battery - 1 })}
@@ -47,4 +48,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default UseContextType;

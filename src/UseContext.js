@@ -38,6 +38,7 @@ class UseContext extends Component {
     return (
       <BatteryContext.Provider value={battery}>
         <OnlineContext.Provider value={online}>
+          <div>=========== demo: context ==========</div>
           <button
             type="button"
             onClick={() => this.setState({ battery: battery - 1 })}

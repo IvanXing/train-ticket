@@ -56,6 +56,9 @@
 
 #### 2.2 静态属性 ContextType 访问跨层级组件的数据
 
+- 在只有一个 context 的组件中，使用 ContextType 比使用<Consumer>简单的多
+- 但是<Provider>的提供必不可少
+
 #### 2.3 Lazy 与 Suspense 实现延迟加载
 
 #### 2.4 Memo 实现指定组件进行渲染
