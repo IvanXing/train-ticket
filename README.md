@@ -104,7 +104,7 @@ class Foo extends Component {
 
   - 父组件传入 bind 函数，生成新函数，会造成每次重新渲染，可以写成类属性传入
 
-- Memo：包裹无状态组件
+- Memo：包裹无状态组件，针对一个组件的渲染是否重复执行
 
 > `Usememo.js`
 
@@ -173,6 +173,13 @@ class Foo extends Component {
 > `HooksuseContext.js`
 
 #### 3.5 使用 Memo&Callback Hooks
+
+- 利用 memo 可以减少不必要的重复计算
+- memo：针对一个组件的渲染是否重复执行`<Foo />`
+- useMemo: 定义一段函数逻辑是否重复执行`()=>{}`
+- useMemo 可以依赖另一个 useMemo
+
+> `HooksuseMeno.js`
 
 #### 3.6 使用 Ref Hooks
 

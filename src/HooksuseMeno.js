@@ -5,7 +5,7 @@ function Counter(props) {
   return <h1>{props.count}</h1>;
 }
 
-function App() {
+function HooksuseMeno() {
   const [count, setCount] = useState(0);
 
   const double = useMemo(() => {
@@ -31,4 +31,4 @@ function App() {
   );
 }
 
-export default App;
+export default HooksuseMeno;

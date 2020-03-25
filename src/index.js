@@ -9,11 +9,13 @@ import App from "./App.js";
 // import HooksuseState from "./HooksuseState.js";
 // import HooksuseEffect from "./HooksuseEffect.js";
 // import HooksuseContext from "./HooksuseContext.js";
+// import HooksuseMeno from "./HooksuseMeno.js";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    {/* <HooksuseMeno /> */}
     {/* <HooksuseContext /> */}
     {/* <HooksuseEffect /> */}
     {/* <HooksuseState /> */}
