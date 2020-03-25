@@ -18,7 +18,7 @@ class Counter extends PureComponent {
   }
 }
 
-function App() {
+function HooksuseRef() {
   const [count, setCount] = useState(0);
   const [clickCount, setClickCount] = useState(0);
   const counterRef = useRef();
@@ -58,4 +58,4 @@ function App() {
   );
 }
 
-export default App;
+export default HooksuseRef;

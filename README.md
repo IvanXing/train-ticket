@@ -187,6 +187,13 @@ class Foo extends Component {
 
 #### 3.6 使用 Ref Hooks
 
+- useRef
+  - 获取子组件或者 DOM 节点的句柄
+  - 渲染周期之间共享数据的存储
+- 组件中需要访问上一次渲染的一些数据，甚至 state，就同步到 ref，下次可以获取
+
+> `HooksuseRef.js`
+
 #### 3.7 自定义 Hooks
 
 #### 3.8 Hooks 的使用法则
