@@ -47,11 +47,12 @@
 
 - 定义
   - 可以让数据在组件树中直接传递，而不需要一级一级手动传递
-  - 类似于全局变量的做法会使组件失去独立性，复用困难
+  - 类似于全局变量的做法会使组件失去独立性，复用困难，应做到具体组件具体分析
 - 结构
-  - `Context` = `<Provider>`派发 + `<Consumer>`接收（任意层级）
+  - `Context` = `<Provider>`生产者 + `<Consumer>`消费者（任意层级）
 - API
   - `createContext(defaultValue?)`
+  - Consumer 向上找不到 Provider 时，则会显示参数 defaultValue，通常用于单元测试
 
 #### 2.2 静态属性 ContextType 访问跨层级组件的数据
 
