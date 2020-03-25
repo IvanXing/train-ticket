@@ -79,3 +79,30 @@
 > UseLazy.js
 
 #### 2.4 Memo 实现指定组件进行渲染
+
+- 数据未变，不需重新渲染
+- shouldComponentUpdate 判断是否需要重新渲染，返回布尔值
+
+```js
+class Foo extends Component {
+  // nextProps以及nextState为即将渲染的新状态
+  shouldComponentUpdate(nextProps, nextState) {
+    if (nextProps.name === this.props.name) {
+      return false;
+    }
+    return true;
+  }
+  render() {
+    console.log("Foo render");
+    return null;
+  }
+}
+```
+
+- PureComponent：只能判断传入属性第一级的对比，属性内部发生变化无法判断，会造成数据变更不渲染，但是这是针对 class 组件继承的
+
+  - 父组件传入 bind 函数，生成新函数，会造成每次重新渲染，可以写成类属性传入
+
+- Memo：包裹无状态组件
+
+> Usememo.js

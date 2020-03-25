@@ -5,11 +5,13 @@ import App from "./App.js";
 import UseContext from "./UseContext.js";
 import UseContextType from "./UseContextType.js";
 import UseLazy from "./UseLazy.js";
+import Usememo from "./Usememo.js";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <Usememo />
     <UseLazy />
     <UseContext />
     <UseContextType />

@@ -33,7 +33,7 @@ const Foo3 = memo(function Foo3(props) {
   return <div>{props.person.age}</div>;
 });
 
-class App extends Component {
+class Usememo extends Component {
   state = {
     count: 0,
     person: {
@@ -64,4 +64,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Usememo;
